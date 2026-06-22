@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/app/lib/prisma";
+import { prisma } from "../../../lib/prisma";
 
 // PATCH /api/tasks/[taskId] — update name, color, or toggle a cell
 export async function PATCH(

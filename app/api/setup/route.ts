@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/app/lib/prisma";
+import { prisma } from "../../../lib/prisma";
 
 // GET /api/setup — creates tables if they don't exist, then seeds default project
 // Call this once after deployment: visit /api/setup in your browser

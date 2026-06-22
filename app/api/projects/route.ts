@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/app/lib/prisma";
-import { TEMPLATE_TASKS, DEFAULT_WEEKS } from "@/app/lib/types";
+import { prisma } from "../../lib/prisma";
+import { TEMPLATE_TASKS, DEFAULT_WEEKS } from "../../lib/types";
 
 // GET /api/projects — return all projects with tasks, ordered
 export async function GET() {

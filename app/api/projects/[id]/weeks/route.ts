@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/app/lib/prisma";
+import { prisma } from "../../../../lib/prisma";
 
 // PATCH /api/projects/[id]/weeks — change total weeks, resize all task cell arrays
 export async function PATCH(

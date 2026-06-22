@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/app/lib/prisma";
-import { BAR_COLORS } from "@/app/lib/types";
+import { prisma } from "../../../../lib/prisma";
+import { BAR_COLORS } from "../../../../lib/types";
 
 // POST /api/projects/[id]/tasks — add a new task
 export async function POST(
