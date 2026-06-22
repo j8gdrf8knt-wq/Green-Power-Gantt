@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+}
+
+@layer components {
+  .btn {
+    @apply h-8 px-3 text-xs font-semibold rounded-md cursor-pointer inline-flex items-center gap-1 border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors;
+  }
+  .btn-green {
+    @apply bg-gp-dark border-gp-dark text-white hover:bg-gp-mid;
+  }
+  .btn-navy {
+    @apply bg-[#1a3a6e] border-[#1a3a6e] text-white hover:bg-[#254d96];
+  }
+  .btn-danger {
+    @apply text-red-600 border-red-200 hover:bg-red-50;
+  }
+  .btn-disabled {
+    @apply opacity-60 pointer-events-none;
+  }
+  .num-btn {
+    @apply w-7 h-7 border border-gray-300 rounded-md bg-white cursor-pointer text-lg font-bold text-gp-dark inline-flex items-center justify-center hover:bg-green-50 hover:border-gp-dark transition-colors;
+  }
+  .task-input {
+    @apply h-8 text-xs px-2 border border-gray-300 rounded-md focus:outline-none focus:border-gp-dark;
+  }
+  /* Table */
+  .th-task {
+    @apply bg-gp-dark text-white text-[11px] font-bold py-[7px] px-3 text-left min-w-[220px] sticky left-0 z-[3] whitespace-nowrap;
+  }
+  .th-week {
+    @apply bg-gp-dark text-white text-[10px] font-bold py-[5px] px-0.5 text-center w-10 min-w-[40px];
+  }
+  .th-dur {
+    @apply bg-gp-dark text-white text-[10px] font-bold py-[5px] px-2 text-center min-w-[70px] whitespace-nowrap;
+  }
+  .td-task {
+    @apply bg-white p-0 sticky left-0 z-[1] border-r-2 border-r-[#c8dcc8];
+  }
+  .td-task-odd {
+    @apply bg-gp-odd;
+  }
+  .td-bar {
+    @apply p-[3px_2px] cursor-pointer w-10;
+  }
+  .td-dur {
+    @apply text-center px-1.5 py-1 text-[11px] font-bold text-gp-dark bg-gp-light whitespace-nowrap;
+  }
+}
